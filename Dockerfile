@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
     unzip \
     curl \
     && docker-php-source extract \
-    && pecl install mongodb \
+    && pecl install mongodb-1.19.1 \
     && docker-php-ext-enable mongodb \
     && docker-php-source delete \
     && a2enmod rewrite
