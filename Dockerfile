@@ -1,3 +1,6 @@
+# ✅ Always start with a FROM instruction
+FROM php:8.2-apache
+
 # Install system packages needed for MongoDB extension
 RUN apt-get update && apt-get install -y \
     libssl-dev \
